@@ -31,9 +31,9 @@ FileNotFoundError: [Errno 2] No such file or directory: '/path/to/file'
 >>> with open('/path/to/file','r') as f:
 	print(f.read())
 
-	
+
 Traceback (most recent call last):
   File "<pyshell#16>", line 1, in <module>
     with open('/path/to/file','r') as f:
 FileNotFoundError: [Errno 2] No such file or directory: '/path/to/file'
->>> 
+>>>
