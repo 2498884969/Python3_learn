@@ -53,3 +53,23 @@ reduce(f,[x1,x2,x3,x4]) = f(f(f(x1,x2),x3),x4)
 >>> str3int('13579')
 13579
 ```
+人名格式转化
+```Python
+>>> def normalize(name):
+	return name.capitalize()
+
+>>> map(normalize,['adam','LISA','barT'])
+<map object at 0x02E8CC10>
+>>> list(map(normalize,['adam','LISA','barT']))
+['Adam', 'Lisa', 'Bart']
+
+```
+求序列之积
+```Python
+>>> from functools import reduce
+>>> def prod(L):
+	return reduce(lambda x,y:x*y,L)
+
+>>> prod([1,2,3,4,5,6])
+720
+```
